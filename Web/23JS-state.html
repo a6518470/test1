@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+        var a = 10;
+        a = 20; //指定運算 a=20
+        a = a + 10; //指定運算 a=20+10
+        a += 5; //指定運算 a=a+5,a=30+5 a=35
+
+        a -= 8; //指定運算 a=a-8,a=35-8 a=27
+        a *= 10; //指定運算 a=a*10,a=27*10 a=270
+        a /= 27; //指定運算 a=a/27,a=270/27 a=10
+
+        a++; //a=a+1   a+=1 a=11
+        document.write(a+"<hr>");
+        //////////////////////
+        var a = 15, b = 42;
+        //var c;
+        //c = a;//c=10
+        //a = b;//a=20
+        //b = c;//b=10
+
+        a -= b;
+        b = a + b;
+        a = b - a;
+        document.write("a="+a+",b="+b+"<hr>");
+        ///////////////////////////
+        var strName = "Jack", intNumber = 123456, blnGender = true;
+        var result;
+
+        result = strName + blnGender;
+        document.write(result + "<br>");
+        document.write(typeof (result) + "<br>");
+
+        result = strName + intNumber;
+        document.write(result + "<br>");
+        document.write(typeof (result) + "<hr>");
+        ////////////////////////////////////////////////////
+
+        document.write(parseInt(3.2) + "<br>");
+        document.write(parseInt("3vvv") + "<br>");
+        document.write(parseInt("aaaa3.2") + "<hr>");
+        ////////////////////
+
+        document.write(eval(5 > 3) + "<br>");
+        document.write(eval("5 > 3") + "<br>");
+        document.write(eval("aaa=100") + "<br>");
+        document.write(eval("20+4*5") + "<br>");
+    </script>
+</body>
+</html>

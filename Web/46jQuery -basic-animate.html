@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #container{
+            height:1000px;
+            width:800px;
+            position:relative;
+
+        }
+        #title{
+            border:3px solid white;
+            background-color:black;
+            color:white;
+            font-size:22pt;
+            text-align:center;
+            width:450px;
+            padding:5px;
+            font-weight:900;
+            position:absolute;
+            top:650px;
+            left:500px;
+        }
+        #photo{
+            position:absolute;
+            left:-1200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="images1/Chrysanthemum.jpg" id="photo" />
+        <p id="title">我是花拉</p>
+    </div>
+
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+        $('#title').hide();
+
+        $('#photo').animate({ 'left': '+=1200' }, 2000, 'swing', function () {
+            $('#title').fadeIn(1500, function () {
+                $('#photo, #title').hide(1500);
+
+            });
+
+
+        });
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*.h1{
+            background-color:red;
+            color:white;
+            border:3px solid green;
+            text-align:center;
+            font-size:24pt;
+
+        }*/
+
+    </style>
+</head>
+<body>
+    <h1>
+        歡迎光臨
+    </h1>
+
+    <input id="Button1" type="button" value="button" onclick="getH1CSS()" />
+
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script>
+    //$('h1').addClass('h1');
+            function getH1CSS() {
+                $('h1').css({
+                    'background-color': 'red',
+                    'color': 'white',
+                    'border': '3px solid green',
+                    'text-align': 'center',
+                    'font-size': '24pt',
+
+                });
+
+                setTimeout(getH2CSS, 300);
+            }
+
+            function getH2CSS() {
+                $('h1').css({
+                    'background-color': 'yellow',
+                    'color': 'black',
+                    'border': '5px solid green',
+                    'text-align': 'center',
+                    'font-size': '38pt',
+
+                });
+                setTimeout(getH1CSS, 300);
+            }
+
+    </script>
+</body>
+</html>

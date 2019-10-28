@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .line{
+            border:1px solid;
+        }
+        .red{
+            background-color:red;
+        }
+        .yellow{
+            background-color:yellow;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>123</li>
+        <li>456</li>
+        <li>
+            <ul id="list1-1">
+                <li>123</li>
+                <li>456</li>
+                <li>789</li>
+                <li>abc</li>
+            </ul>
+        </li>
+        <li>abc</li>
+    </ul>
+
+    <ul id="list2">
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+        <li>abc</li>
+    </ul>
+    
+
+    <!--程式碼擺在jQuery之下-->
+    <!--寫jQuery 前置號要打 $--> <!--jQuery()-->
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script>
+        //$('#list').addClass('red');
+        //$('#list').addClass('line');
+        //$('#list').addClass('yellow');
+
+        $('#list').addClass('yellow').addClass('red').addClass('line');
+        //$('#list ul').addClass('red');
+        $('#list ul>li:nth-child(2n+1)').addClass('red');
+
+
+
+        //javascript 寫法
+        //var list = document.getElementById("list")
+        //list.className = "red";
+        //list.className += "line";
+        //list.className = "yellow";
+        //for (i = 0; i < list.children.length; i++) {
+        //    if (i % 2 == 0) {
+        //        list.children[i].className = "red";
+        //    }
+
+        //}
+    </script>
+</body>
+</html>

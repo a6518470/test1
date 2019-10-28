@@ -1,0 +1,164 @@
+﻿
+@font-face {
+    font-family: 'Myfont';
+    src: url('fonts/webdings.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Myfont';
+    src: url('fonts/webdings.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Myfont';
+    src: url('fonts/webdings.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Myfont';
+    src: url('fonts/webdings.woff') format('woff');
+}
+
+body {
+    background-image: url('images/01.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#ControlPanel {
+    width: 645px;
+    border: 6px outset #00ff90;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+    #ControlPanel > span {
+        background-color: #00ff90;
+        color: black;
+        cursor: pointer;
+        font-family: Myfont;
+        font-size: 3rem;
+        border: 2px solid;
+        border-radius: 50%;
+    }
+
+#music {
+    width: 100%;
+    background-color: black;
+    color: #00ff90;
+    font-size: 15pt;
+}
+
+#info, #duration, #info2 {
+    color: #00ff90;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none;
+}
+
+#volValue {
+    width: 22px;
+    background-color: black;
+    color: #4cff00;
+}
+
+#settime {
+    background-color: #000000;
+    height: 10px;
+}
+
+#progress {
+    width: 100%;
+    height: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    background-color: #e4e4e4;
+}
+
+    #progress::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 10px;
+        height: 5px;
+        background-color: #b00000;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+        #progress::-webkit-slider-thumb:hover {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+        }
+
+#vol {
+    width: 30%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border-radius: 15px;
+    background:#fff;
+}
+
+    #vol::-webkit-slider-runnable-track {
+        height: 10px;
+        border-radius: 10px;
+    }
+
+    #vol::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        margin-top: -5px;
+        background: #00ff90;
+        border-radius: 50%;
+    }
+
+#book {
+    width: 660px;
+    text-align: center;
+    margin: auto;
+}
+
+    #book > div {
+        background-color: black;
+        color: #00ff90;
+        border: 4px double #00ff90;
+        width: 322px;
+        height: 300px;
+        overflow: auto;
+        float: left;
+        cursor: copy;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 900;
+    }
+
+#btnUpdateMusic {
+    clear: both;
+    width: 330px;
+    background-color: #00ff90;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid;
+    color: black;
+    font-weight:900;
+    border-radius: 15px;
+    cursor: pointer;
+}
+    #btnUpdateMusic:hover {
+        color: #003C9D;
+        background-color: #fff;
+        border: 3px #003C9D solid;
+    }

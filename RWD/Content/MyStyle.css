@@ -1,0 +1,25 @@
+﻿body {
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 125, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    color: #ff0000;
+    background-color: rgba(100, 0, 255, 0.1);
+}
+
+.table-bordered {
+    border: 4px double #4cff00;
+}
+
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid #ffd800;
+    }
+
+    .table-bordered thead th,
+    .table-bordered thead td {
+        border-bottom-width: 5px;
+    }

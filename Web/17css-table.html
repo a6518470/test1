@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #tb1{
+            margin:auto;
+            border:3px;
+            border-bottom:10px dotted red;
+            width:300;
+            height:300;
+
+        }
+        #tb1 td,#tb1 th{
+            border:1px solid;
+        }
+        #tb1 thead th{
+            border:5px solid;
+        }
+        #tb1>tbody>tr~tr>td~td{
+            border:5px solid green;
+        }
+        a:link{
+            color:red;
+            text-decoration:none;
+        }
+        a:hover{
+            font-size:2rem;
+
+        }
+        a:visited{
+            color:black
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com/">去GOOGLE</a>
+    <table id="tb1">
+        <tfoot>
+            <tr>
+                <th colspan="3">製表人:我</th>
+
+            </tr>
+        </tfoot>
+        <tr>
+            <td>張</td>
+            <td>60</td>
+            <th>50</th>
+        </tr>
+        <tr>
+            <td>李</td>
+            <td>80</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>李</td>
+            <td>80</td>
+            <td>90</td>
+        </tr>
+
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>數學</th>
+                <th>國語</th>
+            </tr>
+        </thead>
+
+        <caption>成績單</caption>
+    </table>
+
+        <hr />
+        
+        <table border="1" width="300" height="300">
+            <tr>
+                <td>李</td>
+                <td colspan="2">80</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>李</td>
+                <td>80</td>
+                <td>80</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td rowspan="2">李</td>
+                <td colspan="2" rowspan="2">80</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>李</td>
+
+            </tr>
+            <tr>
+                <td>李</td>
+                <td>80</td>
+                <td>80</td>
+                <td rowspan="2">80</td>
+            </tr>
+            <tr>
+                <td colspan="2">李</td>
+                <td>80</td>
+
+            </tr>
+        </table>
+
+</body>
+</html>

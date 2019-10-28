@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="PlayerStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <audio id="audio">
+        <source id="song" type="audio/mpeg" />
+    </audio>
+    <div id="ControlPanel">
+        <select id="music"></select>
+        <br /><br />
+        <span id="play">4</span>
+        <span id="stop"><</span>
+        <span id="prevsong">9</span>
+        <span id="prevtime">7</span>
+        <span id="nexttime">8</span>
+        <span id="nextsong">:</span>
+        <span id="muted">V</span>
+        <span id="loop">q</span>
+        <span id="random">s</span>
+        <span id="allloop">`</span>
+        <span id="songbook">@</span>
+        <br /><br />
+        <input id="progress" type="range" value="0" />
+        <div id="duration">00:00 / 00:00</div>
+        <label style="color:#00ff90">音量：</label>
+        <input id="volValue" type="text" readonly />
+        <input id="volM" type="button" value="-" />
+        <input id="volP" type="button" value="+" />
+        <input id="vol" type="range" min="0" max="100" value="80" />
+        <br /><br />
+        <marquee id="info">請按播放鈕~</marquee>
+        <div id="info2"></div>
+    </div>
+    <div id="book" class="hidden">
+        <div id="Sbook">
+            <div title="music/mc00.mp3">王嘉爾-Different Game</div>
+            <div title="music/mc01.mp3">MC HotDog 熱狗Feat.艾怡良-怨偶</div>
+            <div title="music/mc02.mp3">周湯豪-i GO</div>
+            <div title="music/mc03.mp3">高爾宣-Without You</div>
+            <div title="music/mc04.mp3">高爾宣-最後一次</div>
+            <div title="music/mc05.mp3">頑童MJ116-幹大事</div>
+            <div title="music/mc06.mp3">ØZI-B.O. feat.9m88</div>
+            <div title="music/mc07.mp3">買榜-熊仔×Julia Wu</div>
+        </div>
+        <div id="Tbook"></div>
+        <input id="btnUpdateMusic" type="button" value="更新歌單" />
+    </div>
+    <script src="PlayerJS.js"></script>
+</body>
+</html>
