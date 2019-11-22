@@ -30,7 +30,6 @@ namespace _06ViewModel.Controllers
 
             return View(et);
         }
-
         public ActionResult Create(int? jobTitle)
         {
             if (jobTitle == null)

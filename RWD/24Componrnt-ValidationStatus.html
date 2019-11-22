@@ -13,13 +13,13 @@
     <div class="card bg-light">
         <div class="container">
             <form id="login">
+
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input id="email" type="text" class="form-control" placeholder="Enter Your Email....." />
                     <div>
 
                     </div>
-
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password:</label>
@@ -36,21 +36,62 @@
     </div>
 
     <script src="Scripts/jquery-3.0.0.min.js"></script>
+
     <script>
+
+        var rex = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+        var flag = false;
+
         $('#login').submit(function () {
+
             if ($('#email').val() == "") {
                 $('#email').addClass("is-invalid");
-                $('#email~div').addClass("invalid-feedback").text('請輸入信箱');
-
+                $('#email~div').addClass("invalid-feedback").text('Required!!');
+                return false;
             }
             if ($('#pwd').val() == "") {
                 $('#pwd').addClass("is-invalid");
-                $('#pwd~div').addClass("invalid-feedback").text('請輸入密碼');
-
+                $('#pwd~div').addClass("invalid-feedback").text('Required!!');
+                return false;
             }
 
-            return false;
+
+            if (!flag)
+                return false;
+
+            return true;
         });
+
+        $('#email').keyup(function () {
+            if (!rex.test($('#email').val())) {
+                $('#email').addClass("is-invalid");
+                $('#email~div').addClass("invalid-feedback").text('E-mail格式錯誤!!');
+                flag = false;
+            }
+            else {
+                $('#email').removeClass('is-invalid').addClass("is-valid");
+                $('#email~div').removeClass("invalid-feedback").addClass("valid-feedback").text('OK');
+                flag = true;
+            }
+
+        });
+
+
+        $('#pwd').keyup(function () {
+            if ($('#pwd').val().length < 8) {
+                $('#pwd').addClass("is-invalid");
+                $('#pwd~div').addClass("invalid-feedback").text('至少8個字元!!');
+                flag = false;
+            }
+            else {
+                $('#pwd').removeClass('is-invalid').addClass("is-valid");
+                $('#pwd~div').removeClass("invalid-feedback").addClass("valid-feedback").text('OK');
+                flag = true;
+            }
+        });
+
+
+
 
 
     </script>

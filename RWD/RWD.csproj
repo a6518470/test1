@@ -69,6 +69,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="38Popover_Tooltip.html" />
+    <Content Include="37Spinners.html" />
+    <Content Include="36progress.html" />
+    <Content Include="35Pagintation.html" />
+    <Content Include="34Navbar.html" />
+    <Content Include="33Modal.html" />
+    <Content Include="32Media_Carousel.html" />
+    <Content Include="31Jumbotron.html" />
+    <Content Include="30Componrnt-Nav.html" />
+    <Content Include="29Componrnt-DropDown.html" />
+    <Content Include="28Componrnt-buttons.html" />
+    <Content Include="27Componrnt-Crumb.html" />
+    <Content Include="26Componrnt-Bage.html" />
+    <Content Include="25Componrnt-Aert.html" />
     <Content Include="24Componrnt-ValidationStatus.html" />
     <Content Include="23Componrnt-fom2.html" />
     <Content Include="22Componrnt-fom.html" />
@@ -93,7 +107,6 @@
     <Content Include="03GridSystem.html" />
     <Content Include="02Bootstrap_test.html" />
     <Content Include="01RWD_FirstPage.html" />
-    <Content Include="a01.jpg" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -101,6 +114,17 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\MyStyle.css" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="images\a01.jpg" />
+    <Content Include="images\a02.jpg" />
+    <Content Include="images\a03.jpg" />
+    <Content Include="images\a04.jpg" />
+    <Content Include="images\a05.jpg" />
+    <Content Include="images\a06.jpg" />
+    <Content Include="images\a07.jpg" />
+    <Content Include="images\a08.jpg" />
+    <Content Include="images\a09.jpg" />
+    <Content Include="images\a10.jpeg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />

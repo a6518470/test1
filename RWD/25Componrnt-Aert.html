@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/MyStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-danger">
+            您現在是最高權限,用完馬上登出
+        </div>
+
+        <h1 class="alert alert-warning">
+            您現在是最高權限,用完馬上登出
+
+        </h1>
+
+        <div>
+            您現在是最高權限,用完馬上登出!!<a href="#" class="alert-link">馬上登出</a>
+        </div>
+        <div class="alert alert-dark" data-dismiss="">
+            您現在是最高權限,用完馬上登出
+            <button type="button" class="close">&times;</button>
+
+        </div>
+
+        <div class="alert alert-dark" data-dismiss="alert" id="myAlert">
+            <button type="button" class="close">&times;</button>
+            <h4>你好 系統管理員</h4>
+            <p>您現在是最高權限,用完馬上登出</p>
+            <hr />
+            <p>危險 登出</p>
+
+        </div>
+
+
+    </div>
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script>
+        $('#myAlert').on('closed.bs.alert', function () {
+            alert("記得登出");
+
+        })
+
+
+    </script>
+
+</body>
+</html>

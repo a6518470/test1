@@ -193,6 +193,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Animal.cs" />
+    <Compile Include="App_Code\Dog.cs" />
+    <Compile Include="App_Code\Cat.cs" />
+    <Content Include="App_Code\Fish.cs" />
+    <Content Include="App_Code\IAnimalmove.cs" />
+    <Content Include="App_Code\IAnimalSpeak.cs" />
+    <Compile Include="App_Code\Person.cs" />
+    <Compile Include="App_Code\Superman.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\_01hwController.cs" />
     <Compile Include="Controllers\_01VarController.cs" />
@@ -200,6 +208,7 @@
     <Compile Include="Controllers\_02statementController.cs" />
     <Compile Include="Controllers\_03hwController.cs" />
     <Compile Include="Controllers\_04hwController.cs" />
+    <Compile Include="Controllers\_07ObjectController.cs" />
     <Compile Include="Controllers\員工Controller.cs" />
     <Compile Include="Controllers\產品資料Controller.cs" />
     <Compile Include="Controllers\產品類別Controller.cs" />
@@ -277,6 +286,7 @@
     <Content Include="Views\產品類別\Details.cshtml" />
     <Content Include="Views\產品類別\Edit.cshtml" />
     <Content Include="Views\產品類別\Index.cshtml" />
+    <Content Include="Views\_07Object\polymophsim.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

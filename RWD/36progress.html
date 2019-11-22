@@ -1,0 +1,69 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="Content/MyStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar" style="width:25%"></div>
+        </div>
+        <hr />
+        <div class="progress">
+            <div class="progress-bar" style="width:45%">45%</div>
+        </div>
+        <hr />
+        <div class="progress">
+            <div class="progress-bar bg-danger" style="width:45%">45%</div>
+        </div>
+        <hr />
+        <div class="progress">
+            <div class="progress-bar bg-warning" style="width:45%">45%</div>
+        </div>
+
+        <hr />
+        <div class="progress">
+            <div class="progress-bar bg-danger" style="width:40%">40%</div>
+            <div class="progress-bar bg-warning" style="width:30%">30%</div>
+            <div class="progress-bar bg-success" style="width:30%">30%</div>
+        </div>
+        <hr />
+        <div class="progress">
+            <div class="progress-bar bg-warning progress-bar-striped" style="width:45%">45%</div>
+        </div>
+
+        <hr />
+        <div class="progress" id="MyProgress">
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"></div>
+        </div>
+        <input id="Button1" type="button" value="button" />
+
+    </div>
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script>
+        $('#Button1').click(function () {
+            timer();
+
+        });
+
+        var a = 0;
+        function timer() {
+            a += 2;
+            $('#MyProgress>div').text(a + "% Complete");
+            $('#MyProgress>div').css({ 'width': a + '%' });
+
+            if (a < 100)
+                setTimeout("timer()", 200)
+        }
+
+    </script>
+</body>
+</html>

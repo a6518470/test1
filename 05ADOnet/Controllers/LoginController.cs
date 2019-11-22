@@ -13,7 +13,6 @@ namespace _05ADOnet.Controllers
         SqlConnection Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString);
 
 
-
         // GET: Login
         public ActionResult Index()
         {
@@ -52,7 +51,7 @@ namespace _05ADOnet.Controllers
         public ActionResult Logout()
         {
             Session.Clear();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Login");
         }
 
     }

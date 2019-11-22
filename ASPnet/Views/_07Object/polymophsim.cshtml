@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "polymophsim";
+}
+
+<h2>polymophsim</h2>
+
+<form method="post" action="@Url.Action("polymophsim")">
+    <select id="Select1" name="type">
+        <option value="d">狗</option>
+        <option value="c">貓</option>
+    </select>
+    <input id="Submit1" type="submit" value="submit" />
+
+</form>
+
+<hr />
+@ViewBag.Result

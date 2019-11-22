@@ -1,25 +1,72 @@
-﻿body {
-}
-
+﻿
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 125, 0.05);
+    background-color: rgba(0, 0, 255, 0.05);
 }
 
 .table-hover tbody tr:hover {
     color: #ff0000;
-    background-color: rgba(100, 0, 255, 0.1);
+    background-color: rgb(255, 216, 0);
+    border: 10px dotted red;
 }
 
+
 .table-bordered {
-    border: 4px double #4cff00;
+    border: 5px double #6887ff;
 }
 
     .table-bordered th,
     .table-bordered td {
-        border: 1px solid #ffd800;
+        border: 3px solid #6887ff;
     }
 
     .table-bordered thead th,
     .table-bordered thead td {
-        border-bottom-width: 5px;
+        border-bottom-width: 10px;
     }
+
+
+
+.jumbotron {
+    background-image: url('../images/a06.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #ff0000;
+    content: ">";
+}
+
+.breadcrumb-item.active {
+    color: #ffffff;
+    background-color: brown;
+}
+
+
+.MyFontStyle1 {
+    font-family: 標楷體;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-weight: 900;
+    font-size: 40pt;
+}
+
+.MyFontStyle2 {
+    font-family: 標楷體;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-weight: 900;
+    font-size: 22pt;
+}
+
+.MyFontForBtn {
+    font-family: 微軟正黑體;
+    color: white;
+    font-weight: 900;
+}
+
+.MyFont {
+    font-family: 微軟正黑體;
+}
